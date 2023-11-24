@@ -57,7 +57,7 @@ aside {
     }
 }
 
-header {
+header.plantilla {
     display: none;
 }
 
@@ -79,7 +79,7 @@ ul {
         display: none;
     }
 
-    header {
+    header.plantilla {
         display: block;
         width: 100vw;
         min-height: 10%;
