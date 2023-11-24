@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: titulo;
+            src: url('fonts/titulo.ttf');
+        }
+        body{
+            height: 100vh;
+            background-color: #0c1821;
+            margin: 0;
+        }
+        aside{
+            
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 100%;
+            background-color: #ccc9dc;
+            min-width: 10%;
+            max-width: 300px;  
+        }
+        .cabecera{
+            display: flex;
+            align-items: center;        
+            justify-content: space-evenly;
+            font-family: titulo;
+            font-size: x-large;
+            height: 10%;
+        }
+        .icon{
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('image/image.jpg');
+            background-size: 150%;
+            background-position: center;
+        }
+        .contenido{
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Poppins;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <div class="cabecera">
+            <div class="icon"></div>
+            <h1>Nuestro Lente</h1>
+        </div>
+        <div class="contenido">
+            <ul>
+                <li>
+                    <div class="casa"></div>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <details>
+                        <summary>Modelos</summary>
+                        <ul>
+                            <li><a href="#">Modelo1</a></li>
+                            <li><a href="#">Modelo2</a></li>
+                            <li><a href="#">Modelo3</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">Contacta con nosotros</a></li>
+            </ul>
+        </div>
+    </aside>
+</body>
+</html>

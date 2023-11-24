@@ -1,0 +1,130 @@
+:root {
+    --fondo: #0c1821;
+    --resaltar: #324a5f;
+    --contraste: #ccc9dc;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins&display=swap');
+
+body {
+    background-color: var(--fondo);
+    color: var(--fondo);
+    margin: 0;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: var(--fondo);
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+}
+main{
+    display: flex;
+    height: 100%;
+}
+aside {
+    height: 100%;
+    background-color: var(--contraste);
+    width: 100%;
+    & .cabecera {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Josefin Sans';
+        font-size: x-large;
+        height: 10%;
+        & h1{
+            padding-right: 20px;
+        }
+    }
+
+    & .contenido {
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Poppins';
+    }
+}
+
+header {
+    display: none;
+}
+
+.icon {
+    border-radius: 15%;
+    width: 50px;
+    height: 50px;
+    background-image: url('image/image.jpg');
+    background-size: 150%;
+    background-position: center;
+}
+
+ul {
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    aside {
+        display: none;
+    }
+
+    header {
+        display: block;
+        width: 100vw;
+        min-height: 10%;
+        background-color: var(--contraste);
+
+        .marca {
+            font-family: 'Josefin Sans';
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & .icono {
+                background-image: url('img/Imagen\ de\ WhatsApp\ 2023-11-22\ a\ las\ 16.29.09_e9810c2a.jpg');
+                background-size: 150%;
+                background-position: center;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+
+
+    .icono-home {
+        background-image: url('img/home-alt.svg');
+        background-size: contain;
+        background-position: center;
+    }
+
+    .icono-mail {
+        background-image: url('img/mail.svg');
+        background-size: contain;
+        background-position: center;
+    }
+
+    .texto {
+        margin-left: 20px;
+        display: block;
+        font-family: 'Poppins';
+        padding-top: 8px;
+        padding-left: 10px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 425px) {
+    .texto {
+        display: none;
+    }
+}

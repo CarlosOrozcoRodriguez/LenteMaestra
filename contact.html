@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Josefin+Sans:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="plantilla">
+        <section class="marca">
+            <div class="icon icono">
+
+            </div>
+            <div class="nombre">
+                <h1>Nuestro Lente</h1>
+            </div>
+        </section>
+        <section class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="icon icono-home">
+
+                        </i>
+                        <span class="texto">
+                            Inicio
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon icono-mail">
+
+                        </i>
+                        <span class="texto">
+                            Contacto
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <aside>
+        <div class="cabecera">
+            <div class="icon"></div>
+            <h1>Nuestro Lente</h1>
+        </div>
+        <div class="contenido">
+            <ul>
+                <li>
+                    <div class="casa"></div>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <details>
+                        <summary>Modelos</summary>
+                        <ul>
+                            <li><a href="#">Modelo1</a></li>
+                            <li><a href="#">Modelo2</a></li>
+                            <li><a href="#">Modelo3</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">Contacta con nosotros</a></li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- principio contactos -->
+    <main>
+
+        <header>
+            <h1>¡Nostros contactamos contigo!</h1>
+        </header>
+    <article class="formulario">
+        <form action="contact.html" method="post">
+            <table class="formulario-tabla">
+                <tbody class="formulario-tabla-body">
+                    <tr class="primer-grupo">
+                        <td><label for="Nombre">Nombre</label></td>
+                        <td><input type="text" name="Nombre" id="Nombre" ></td>
+                    </tr>
+                    <tr class="primer-grupo">
+                        <td><label for="Telefono">Teléfono</label></td>
+                        <td><input type="tel" name="Telefono" id="Telefono" ></td>
+                    </tr>
+                    <tr class="primer-grupo">
+                        <td><label for="Nacionalidad">Nacionalidad</label></td>
+                        <td>
+                            <select name="Nacionalidad" id="Nacionalidad">
+                                <option value="Española">Española</option>
+                                <option value="Colombiana">Colombiana</option>
+                                <option value="Peruana">Peruana</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="segundo-grupo">
+                        <td><label for="Correo">e-Mail</label></td>
+                        <td><input type="mail" name="Correo" id="Correo" ></td>
+                    </tr>
+                    <tr class="segundo-grupo">
+                        <td><label for="Sexo">Sexo</label></td>
+                        <td>
+                            <div>
+                                <input type="radio" name="Sexo" id="Hombre" value="Hombre">Hombre</input>
+                            </div>
+                            <div>
+                                <input type="radio" name="Sexo" id="Mujer" value="Mujer">Mujer</input>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="segundo-grupo">
+                        <td><label for="FechaNacimiento">Fecha de nacimiento</label></td>
+                        <td><input type="date" name="FechaNacimiento" id="FechaNacimiento" ></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="boton-formulario recibir-llamada">
+                <input type="submit" value="Recibir llamada">
+            </div>
+            <div class="boton-formulario mejor-correo">
+                <input type="submit" value="Mejor un correo">
+            </div>
+        </form>
+    </article>
+    </main>
+    <!-- fin contactos -->
+</body>
+</html>

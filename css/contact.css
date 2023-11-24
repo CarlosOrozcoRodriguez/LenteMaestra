@@ -1,0 +1,64 @@
+:root {
+    --sinUso1: #000000;
+    --fondo: #0c1821;
+    --sinUso2: #1b2a41;
+    --resaltar: #324a5f;
+    --contraste: #ccc9dc;
+}
+
+/*importar fuentes y tal*/
+
+body{
+    display: grid;
+    grid-template-columns: 30% 65%;
+}
+
+main{
+    color: var(--contraste);
+    background-color: var(--fondo);
+}
+
+h1{
+    text-align: center;
+}
+
+input {
+    background-color: var(--resaltar);
+    border-radius: 2em;
+}
+
+select {
+    border-radius: 2em;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+td:nth-child(2) {
+    margin-left: 2vw;
+}
+
+
+.formulario-tabla {
+    width: 100%;
+}
+
+tr {
+    /* align-self: center; */
+    grid-template-columns: 40% 60%;
+    display: grid;
+    align-items: center;
+}
+
+
+.formulario-tabla-body{
+    display: grid;
+    grid-template-columns: 50% 50%; /* pasar a 100% cuando mediaquery*/
+}
+
+.boton-formulario {
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+}
