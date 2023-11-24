@@ -2,6 +2,11 @@
     --fondo: #0c1821;
     --resaltar: #324a5f;
     --contraste: #ccc9dc;
+    --img-fondo: url('../media/images/camara-background.avif');
+    --img-f: url('../media/images/cachorros.jpg');
+    --house: url('../media/icons/home.svg');
+    --mail: url('../media/icons/mail.svg');
+    --marca: url('../media/icons/marca.jpg');
 }
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins&display=swap');
 
@@ -23,6 +28,9 @@ a {
 main{
     display: flex;
     height: 100%;
+    & aside{
+        width:30% ;
+    }
 }
 aside {
     height: 100%;
@@ -57,7 +65,7 @@ header.plantilla {
     border-radius: 15%;
     width: 50px;
     height: 50px;
-    background-image: url('image/image.jpg');
+    background-image: var(--marca);
     background-size: 150%;
     background-position: center;
 }
@@ -85,7 +93,7 @@ ul {
             justify-content: center;
 
             & .icono {
-                background-image: url('img/Imagen\ de\ WhatsApp\ 2023-11-22\ a\ las\ 16.29.09_e9810c2a.jpg');
+                background-image: var(--marca);
                 background-size: 150%;
                 background-position: center;
             }
@@ -102,13 +110,13 @@ ul {
 
 
     .icono-home {
-        background-image: url('img/home-alt.svg');
+        background-image: var(--house);
         background-size: contain;
         background-position: center;
     }
 
     .icono-mail {
-        background-image: url('img/mail.svg');
+        background-image: var(--mail);
         background-size: contain;
         background-position: center;
     }
