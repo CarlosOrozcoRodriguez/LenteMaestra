@@ -2,9 +2,18 @@
     --fondo: #0c1821;
     --resaltar: #324a5f;
     --contraste: #ccc9dc;
+    --img-fondo: url('../media/images/camara-background.avif');
+    --img-f: url('../media/images/cachorros.jpg');
+    --house: url('../media/icons/home.svg');
+    --mail: url('../media/icons/mail.svg');
+    --marca: url('../media/icons/marca.jpg');
 }
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins&display=swap');
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans';
+    text-align: center;
+}
 body {
     background-color: var(--fondo);
     color: var(--fondo);
@@ -13,21 +22,16 @@ body {
 
    
 }
-a {
-    text-decoration: none;
-    color: var(--fondo);
-    font-size: large;
-    font-weight: bold;
-    display: flex;
-    padding-bottom: 30px;
-    align-items: center;
-}
+
 main{
     display: flex;
-    height: 100%;
+    height: 100vh;
+    & aside{
+        width:30% ;
+    }
 }
 aside {
-    height: 100%;
+    height: 100vh;
     background-color: var(--contraste);
     width: 100%;
     & .cabecera {
@@ -49,9 +53,22 @@ aside {
         justify-content: space-between;
         font-family: 'Poppins';
     }
+    & summary{
+        font-size: large;
+        font-weight: bold;
+    }
+    & a {
+        text-decoration: none;
+        color: var(--fondo);
+        font-size: large;
+        font-weight: bold;
+        display: flex;
+        padding-bottom: 30px;
+        align-items: center;
+    }
 }
 
-header {
+header.plantilla {
     display: none;
 }
 
@@ -59,7 +76,7 @@ header {
     border-radius: 15%;
     width: 50px;
     height: 50px;
-    background-image: url('image/image.jpg');
+    background-image: var(--marca);
     background-size: 150%;
     background-position: center;
 }
@@ -73,13 +90,13 @@ ul {
         display: none;
     }
 
-    header {
+    header.plantilla {
         display: block;
         width: 100vw;
         min-height: 10%;
         background-color: var(--contraste);
 
-        .marca {
+        & .marca {
             font-family: 'Josefin Sans';
             font-size: x-large;
             display: flex;
@@ -87,14 +104,14 @@ ul {
             justify-content: center;
 
             & .icono {
-                background-image: url('img/Imagen\ de\ WhatsApp\ 2023-11-22\ a\ las\ 16.29.09_e9810c2a.jpg');
+                background-image: var(--marca);
                 background-size: 150%;
                 background-position: center;
             }
         }
     }
 
-    ul {
+    header.plantilla ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -104,17 +121,25 @@ ul {
 
 
     .icono-home {
-        background-image: url('img/home-alt.svg');
+        background-image: var(--house);
         background-size: contain;
         background-position: center;
+        height: 50px;
+        width: 50px;
     }
 
     .icono-mail {
-        background-image: url('img/mail.svg');
+        background-image: var(--mail);
         background-size: contain;
         background-position: center;
+        height: 50px;
+        width: 50px;
     }
-
+    .menu ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .texto {
         margin-left: 20px;
         display: block;
