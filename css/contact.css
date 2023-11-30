@@ -8,12 +8,8 @@
 
 /*importar fuentes y tal*/
 
-body{
-    display: grid;
-    grid-template-columns: 30% 65%;
-}
 
-main{
+article{
     color: var(--contraste);
     background-color: var(--fondo);
 }
