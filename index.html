@@ -1,97 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LenteMaestra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Josefin+Sans:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/global.css">
-<style>
-    body{
-        margin: 0;
-        height: 100vh;
-        background: url('./media/images/camara-background.avif') no-repeat center;
-        background-size: contain;
-        background-color: #020a0d;
-        
-        
-        
-    }
-    .img1{grid-area:a1;}
-    .img2{grid-area:a2;}
-    .img3{grid-area:a3;}
-    .img4{grid-area:a4;}
-    .img5{grid-area:a5;}
-    .img6{grid-area:a6;}
-    .img7{grid-area:a7;}
-    .img8{grid-area:a8;}
-    .img9{grid-area:a9;}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Josefin+Sans:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Yuji+Hentaigana+Akari&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-size: contain;
+            background-color: rgb(2,10,13);
 
-    .contenedor{
-        display: grid;
-        height: 100vh;
-        text-align: center;
-        align-content: center;
-        justify-content: center;
-        grid-template-columns: repeat(3,10% );
-        grid-template-areas:
-        'a1 a2 a3'
-        'a4 a5 a6'
-        'a7 a8 a9';
-        gap: 50px;
-        
-    }
-   
-    
-    .contenedor > div{
-        padding: 15px;
-       
-    }
-    
 
-    .img1 img,
-    .img2 img,
-    .img3 img,
-    .img4 img,
-    .img5 img,
-    .img6 img,
-    .img7 img,
-    .img8 img,
-    .img9 img {
-    grid-area: auto;
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%; /* Ocupar todo el ancho disponible */
-    height: auto; /* Mantener la proporción */
-    }
-    .imagen{
-        background-color: #ccc9dc62;
-        backdrop-filter: blur(.5px);
-        border-radius: 8px;
-        font-family: 'Josefin Sans';
+
+        }
+
+        .img1 {
+            grid-area: a1;
+        }
+
+        .img2 {
+            grid-area: a2;
+        }
+
+        .img3 {
+            grid-area: a3;
+        }
+
+        .img4 {
+            grid-area: a4;
+        }
+
+        .img5 {
+            grid-area: a5;
+        }
+
+        .img6 {
+            grid-area: a6;
+        }
+
+        .img7 {
+            grid-area: a7;
+        }
+
+        .img8 {
+            grid-area: a8;
+        }
+
+        .img9 {
+            grid-area: a9;
+        }
+
+        .contenedor {
+            display: grid;
+            height: 100vh;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            grid-template-columns: repeat(3, 20%);
+            grid-template-areas:
+                'a1 a2 a3'
+                'a4 a5 a6'
+                'a7 a8 a9';
+            gap: 50px;
+
+        }
+
+
+        .contenedor>div {
+            padding: 15px;
+
+        }
+
         
-        transition: 0.5s;
-        
-    }
-  
-    .imagen:hover {
-        background-color: #ccc9dca0;
+        .img1 img,
+        .img2 img,
+        .img3 img,
+        .img4 img,
+        .img5 img,
+        .img6 img,
+        .img7 img,
+        .img8 img,
+        .img9 img {
+            grid-area: auto;
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            /* Ocupar todo el ancho disponible */
+            height: auto;
+            /* Mantener la proporción */
+        }
+
+        .imagen {
+            background-color: #ccc9dc62;
+            backdrop-filter: blur(.5px);
+            border-radius: 8px;
+            font-family: 'Josefin Sans';
+
+            transition: 0.5s;
+
+        }
+
+        .imagen:hover {
+            background-color: #ccc9dca0;
             scale: 1.2;
             cursor: pointer;
             transform: scale(1.05);
             font-size: x-large;
         }
-
-   
-    
-</style>
+    </style>
 
 </head>
+
 <body>
-    
-    <header> 
+
+    <header class="plantilla">
         <section class="marca">
             <div class="icon icono">
 
@@ -125,46 +155,41 @@
             </ul>
         </section>
     </header>
-
+    <main>
         <aside>
             <div class="cabecera">
                 <div class="icon"></div>
                 <h1>Nuestro Lente</h1>
             </div>
-        <div class="contenido">
-            <ul>
-                <li>
-                    <div class="casa"></div>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <details>
-                        <summary>Modelos</summary>
-                        <ul>
-                            <li><a href="#">Modelo1</a></li>
-                            <li><a href="#">Modelo2</a></li>
-                            <li><a href="#">Modelo3</a></li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#">Contacta con nosotros</a></li>
-            </ul>
-        </div>
+            <div class="contenido">
+                <ul>
+                    <li>
+                        <div class="casa"></div>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Modelos</summary>
+                            <ul>
+                                <li><a href="#">Modelo1</a></li>
+                                <li><a href="#">Modelo2</a></li>
+                                <li><a href="#">Modelo3</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#">Contacta con nosotros</a></li>
+                </ul>
+            </div>
         </aside>
-    <!-- insertar aqui -->
-    
 
 
 
+        <article>
 
-<!-- insertar aqui -->
 
-
-    <article>
-        
-            <div class="contenedor">
+            <div class="contenedor contenido-articulo">
                 <div class="imagen img1">
                     <img src="./media/images/cachorros.jpg">
                     <p>Titulo</p>
@@ -203,8 +228,9 @@
                     <p>Titulo</p>
                 </div>
             </div>
-       
-    </article>
-    
+
+        </article>
+    </main>
 </body>
+
 </html>
