@@ -4,6 +4,14 @@
     --sinUso2: #1b2a41;
     --resaltar: #324a5f;
     --contraste: #ccc9dc;
+    --facebook: url('../media/icons/social-media/facebook.svg');
+    --google: url('../media/icons/social-media/google.svg');
+    --instagram: url('../media/icons/social-media/instagram.svg');
+    --linkedin: url('../media/icons/social-media/linkedin.svg');
+    --pinterest: url('../media/icons/social-media/pinterest.svg');
+    --rss-feed: url('../media/icons/social-media/rss-feed.svg');
+    --telegram: url('../media/icons/social-media/telegram.svg');
+    --tiktok: url('../media/icons/social-media/tiktok.svg');
 }
 
 /*importar fuentes y tal*/
@@ -12,6 +20,8 @@
 article{
     color: var(--contraste);
     background-color: var(--fondo);
+    display: grid;
+    grid-template-rows: 20% 70% 10%
 }
 
 h1{
@@ -21,10 +31,13 @@ h1{
 input {
     background-color: var(--resaltar);
     border-radius: 2em;
+    padding-block: 0.5vw;
 }
 
 select {
     border-radius: 2em;
+    padding-block: 0.5vw;
+    min-width: 100%;
 }
 
 td:first-child {
@@ -32,7 +45,8 @@ td:first-child {
 }
 
 td:nth-child(2) {
-    margin-left: 2vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
 }
 
 
@@ -45,6 +59,8 @@ tr {
     grid-template-columns: 40% 60%;
     display: grid;
     align-items: center;
+    padding-top: 3vw;
+
 }
 
 
@@ -57,4 +73,56 @@ tr {
     margin: 1vh;
     display: flex;
     justify-content: center;
+}
+
+.formulario-form {
+    display: grid;
+    grid-template-rows: 80% 10% 10%;
+}
+
+footer.social{
+    display: grid;
+    grid-template-columns: repeat(8 1fr);
+}
+
+.icon-social {
+    border-radius: 15%;
+    width: 50px;
+    height: 50px;
+    background-size: 150%;
+    background-position: center;
+    display: grid;
+
+}
+
+.facebook{
+    background-image: var(--facebook);
+}
+
+.google{
+    background-image: var(--google);
+}
+
+.instagram{
+    background-image: var(--instagram);
+}
+
+.linkedin{
+    background-image: var(--linkedin );
+}
+
+.pinterest{
+    background-image: var(--pinterest);
+}
+
+.rss{
+    background-image: var(--rss-feed);
+}
+
+.telegram{
+    background-image: var(--telegram );
+}
+
+.tiktok{
+    background-image: var(--tiktok);
 }
