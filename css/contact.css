@@ -1,12 +1,24 @@
 @import url('global.css');
-.contenido{
+:root {
+    --facebook: url('../media/icons/social-media/facebook.svg');
+    --google: url('../media/icons/social-media/google.svg');
+    --instagram: url('../media/icons/social-media/instagram.svg');
+    --linkedin: url('../media/icons/social-media/linkedin.svg');
+    --pinterest: url('../media/icons/social-media/pinterest.svg');
+    --rss-feed: url('../media/icons/social-media/rss-feed.svg');
+    --telegram: url('../media/icons/social-media/telegram.svg');
+    --tiktok: url('../media/icons/social-media/tiktok.svg');
+}
+.contendio-articulo{
     color: var(--contraste);
     background-color: var(--fondo);
     font-family: 'Poppins';
-    display: flex;
+    /* display: flex; 
+    flex-direction: column;*/
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     & header h1{
         text-align: center;
@@ -30,7 +42,7 @@ tr{
     grid-template-columns: 40% 60%;
     display: grid;
     align-items: center;
-    min-height: 200px;
+    min-height: 120px;
     & td{
         text-align: center;
         &:first-child{
@@ -54,33 +66,30 @@ tr{
     display: flex;
     justify-content: center;
 }
+
+
+.formulario-form {
+    display: grid;
+    grid-template-rows: 400px 50px 50px;;
+}
+
 @media screen and (max-width: 768px) {
     .formulario-tabla-body{
         grid-template-columns: 100%;
     }
     
 }
-:root {
-    --facebook: url('../media/icons/social-media/facebook.svg');
-    --google: url('../media/icons/social-media/google.svg');
-    --instagram: url('../media/icons/social-media/instagram.svg');
-    --linkedin: url('../media/icons/social-media/linkedin.svg');
-    --pinterest: url('../media/icons/social-media/pinterest.svg');
-    --rss-feed: url('../media/icons/social-media/rss-feed.svg');
-    --telegram: url('../media/icons/social-media/telegram.svg');
-    --tiktok: url('../media/icons/social-media/tiktok.svg');
-}
 
 footer.social{
     display: grid;
-    grid-template-columns: repeat(8 1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .icon-social {
     border-radius: 15%;
     width: 50px;
     height: 50px;
-    background-size: 150%;
+    background-size: 95%;
     background-position: center;
     display: grid;
 

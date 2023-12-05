@@ -96,22 +96,23 @@
 
 <article class="contendio-articulo formulario">
         <header>
-        </header>
             <h1>¡Nostros contactamos contigo!</h1>
+        </header>
+        <section class="main-formulario">
+            <form class="formulario-form" action="contact.html" method="post">
             <table class="formulario-tabla">
-        <form class="formulario-form" action="contact.html" method="post">
                 <tbody class="formulario-tabla-body">
-                        <td><input type="text" name="Nombre" id="Nombre" ></td>
+                    <tr class="primer-grupo">
                         <td><label for="Nombre">Nombre</label></td>
-                    <tr class="primer-grupo">
+                        <td><input type="text" name="Nombre" id="Nombre" ></td>
                     </tr>
-                        <td><label for="Telefono">Teléfono</label></td>
                     <tr class="primer-grupo">
+                        <td><label for="Telefono">Teléfono</label></td>
                         <td><input type="tel" name="Telefono" id="Telefono" ></td>
                     </tr>
                     <tr class="primer-grupo">
-                        <td>
                         <td><label for="Nacionalidad">Nacionalidad</label></td>
+                        <td>
                             <select name="Nacionalidad" id="Nacionalidad">
                                 <option value="Española">Española</option>
                                 <option value="Colombiana">Colombiana</option>
@@ -132,8 +133,8 @@
                             <div>
                                 <input type="radio" name="Sexo" id="Mujer" value="Mujer">Mujer</input>
                             </div>
-                    </tr>
                         </td>
+                    </tr>
                     <tr class="segundo-grupo">
                         <td><label for="FechaNacimiento">Fecha de nacimiento</label></td>
                         <td><input type="date" name="FechaNacimiento" id="FechaNacimiento" ></td>
@@ -146,7 +147,8 @@
             <div class="boton-formulario mejor-correo">
                 <input type="submit" value="Mejor un correo">
             </div>
-        </form>
+            </form>
+    </section>
         <footer class="social">
             <i class="icon-social facebook"></i>
             <i class="icon-social google"></i>
