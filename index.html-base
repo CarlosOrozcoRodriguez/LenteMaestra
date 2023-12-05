@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LenteMaestra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Josefin+Sans:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        margin: 0;
+        height: 100vh;
+        background: url('./media/images/camara-background.avif') no-repeat center;
+        background-size: contain;
+        background-color: #020a0d;
+        
+        
+        
+    }
+    .img1{grid-area:a1;}
+    .img2{grid-area:a2;}
+    .img3{grid-area:a3;}
+    .img4{grid-area:a4;}
+    .img5{grid-area:a5;}
+    .img6{grid-area:a6;}
+    .img7{grid-area:a7;}
+    .img8{grid-area:a8;}
+    .img9{grid-area:a9;}
+
+    .contenedor{
+        display: grid;
+        height: 100vh;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(3,10% );
+        grid-template-areas:
+        'a1 a2 a3'
+        'a4 a5 a6'
+        'a7 a8 a9';
+        gap: 50px;
+        
+    }
+   
+    
+    .contenedor > div{
+        padding: 15px;
+       
+    }
+    
+
+    .img1 img,
+    .img2 img,
+    .img3 img,
+    .img4 img,
+    .img5 img,
+    .img6 img,
+    .img7 img,
+    .img8 img,
+    .img9 img {
+    grid-area: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: auto; /* Mantener la proporción */
+    }
+    .imagen{
+        background-color: #ccc9dc62;
+        backdrop-filter: blur(.5px);
+        border-radius: 8px;
+        font-family: 'Josefin Sans'
+        
+    }
+  
+
+</style>
+
+</head>
+<body>
+    <main>
+        
+            <div class="contenedor">
+                <div class="imagen img1">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+
+                <div class="imagen img2">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+                <div class="imagen img3">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+                <div class="imagen img4">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+                <div class="imagen img5">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+                <div class="imagen img6">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+                <div class="imagen img7">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+                <div class="imagen img8">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+                <div class="imagen img9">
+                    <img src="./media/images/cachorros.jpg">
+                    <p>Titulo</p>
+                </div>
+            </div>
+       
+    </main>
+    
+</body>
+</html>
