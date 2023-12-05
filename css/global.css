@@ -26,6 +26,7 @@ body {
     width: 100%;
 }
 main{
+    overflow-y: hidden;
     display: flex;
     height: 100vh;
     & aside{
