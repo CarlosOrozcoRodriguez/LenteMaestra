@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Josefin+Sans:wght@700&family=Noto+Sans+KR:wght@100&family=Raleway:wght@100&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
 
     <header class="plantilla">
@@ -26,20 +29,20 @@
         <section class="menu">
             <ul>
                 <li>
-                    <a href="#">
-                        <i class="icon icono-home">
+                    <a href="index.html">
+                        <div class="icon icono-home">
 
-                        </i>
+                        </div>
                         <span class="texto">
                             Inicio
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <i class="icon icono-mail">
+                    <a href="contact.html">
+                        <div class="icon icono-mail">
 
-                        </i>
+                        </div>
                         <span class="texto">
                             Contacto
                         </span>
@@ -48,55 +51,67 @@
             </ul>
         </section>
     </header>
-    <aside>
-        <div class="cabecera">
-            <div class="icon"></div>
-            <h1>Nuestro Lente</h1>
-        </div>
-        <div class="contenido">
-            <ul>
-                <li>
-                    <div class="casa"></div>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <details>
-                        <summary>Modelos</summary>
-                        <ul>
-                            <li><a href="#">Modelo1</a></li>
-                            <li><a href="#">Modelo2</a></li>
-                            <li><a href="#">Modelo3</a></li>
-                        </ul>
-                    </details>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="#">Contacta con nosotros</a></li>
-            </ul>
-        </div>
-    </aside>
 
-<!-- principio contactos -->
+
     <main>
+        <aside>
+            <a href="index.html">
+                <div class="cabecera">
+                    <div class="icon"></div>
+                    <h1>Nuestro Lente</h1>
+            </a>
+                </div>
+            <div class="contenido">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                        <div class="casa"></div>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Modelos</summary>
+                            <ul>
+                                <li><a href="product01.html">Canon EOS 5D Mark IV</a></li>
+                                <li><a href="#">Nikon D850</a></li>
+                                <li><a href="#">Sony A7 III</a></li>
+                                <li><a href="#">Fujifilm X-T4</a></li>
+                                <li><a href="#">Panasonic Lumix GH5</a></li>
+                                <li><a href="#">Nikon Z6</a></li>
+                                <li><a href="#">Canon EOS R6</a></li>
+                                <li><a href="#">Olympus OM-D E-M1 Mark III</a></li>
+                                <li><a href="#">Sony RX100 VII</a></li>
+                                <li><a href="#">Leica Q2</a></li>
+                                <li><a href="#">DJI Pocket 2</a></li>
+                        </details>
+                    </li>
+                                <li><a href="#">GoPro Hero 10 Black</a></li>
+                            </ul>
+                </ul>
+                <ul>
+                    <li><a href="contact.html">Contacta con nosotros</a></li>
+                </ul>
+            </div>
+        </aside>
+<!-- principio contactos -->
 
+<article class="contendio-articulo formulario">
         <header>
-            <h1>¡Nostros contactamos contigo!</h1>
         </header>
-    <article class="formulario">
-        <form action="contact.html" method="post">
+            <h1>¡Nostros contactamos contigo!</h1>
             <table class="formulario-tabla">
+        <form class="formulario-form" action="contact.html" method="post">
                 <tbody class="formulario-tabla-body">
-                    <tr class="primer-grupo">
-                        <td><label for="Nombre">Nombre</label></td>
                         <td><input type="text" name="Nombre" id="Nombre" ></td>
-                    </tr>
+                        <td><label for="Nombre">Nombre</label></td>
                     <tr class="primer-grupo">
+                    </tr>
                         <td><label for="Telefono">Teléfono</label></td>
+                    <tr class="primer-grupo">
                         <td><input type="tel" name="Telefono" id="Telefono" ></td>
                     </tr>
                     <tr class="primer-grupo">
-                        <td><label for="Nacionalidad">Nacionalidad</label></td>
                         <td>
+                        <td><label for="Nacionalidad">Nacionalidad</label></td>
                             <select name="Nacionalidad" id="Nacionalidad">
                                 <option value="Española">Española</option>
                                 <option value="Colombiana">Colombiana</option>
@@ -117,8 +132,8 @@
                             <div>
                                 <input type="radio" name="Sexo" id="Mujer" value="Mujer">Mujer</input>
                             </div>
-                        </td>
                     </tr>
+                        </td>
                     <tr class="segundo-grupo">
                         <td><label for="FechaNacimiento">Fecha de nacimiento</label></td>
                         <td><input type="date" name="FechaNacimiento" id="FechaNacimiento" ></td>
@@ -132,8 +147,20 @@
                 <input type="submit" value="Mejor un correo">
             </div>
         </form>
+        <footer class="social">
+            <i class="icon-social facebook"></i>
+            <i class="icon-social google"></i>
+            <i class="icon-social instagram"></i>
+            <i class="icon-social linkedin"></i>
+            <i class="icon-social rss"></i>
+            <i class="icon-social pinterest"></i>
+            <i class="icon-social telegram"></i>
+            <i class="icon-social tiktok"></i>
+        </footer>
     </article>
-    </main>
     <!-- fin contactos -->
+
+</main>
 </body>
+
 </html>

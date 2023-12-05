@@ -1,0 +1,98 @@
+@import url('global.css');
+.img1 {
+    grid-area: a1;
+}
+.img2 {
+    grid-area: a2;
+}
+.img3 {
+    grid-area: a3;
+}
+.img4 {
+    grid-area: a4;
+}
+.img5 {
+    grid-area: a5;
+}
+.img6 {
+    grid-area: a6;
+}
+.img7 {
+    grid-area: a7;
+}
+.img8 {
+    grid-area: a8;
+}
+.img9 {
+    grid-area: a9;
+}
+.img10{
+    grid-area: a10;
+}
+.img11{
+    grid-area: a11;
+}
+.img12{
+    grid-area: a12;
+}
+a{
+    color: var(--fondo);
+    &:hover{
+        color: var(--contraste);
+    }
+    &:active{
+        color: var(--resaltar);
+    }
+    &:visited{
+        color: var(--fondo);
+    }
+}
+.contenedor {
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 20%);
+    grid-template-areas:
+        'a1 a2 a3'
+        'a4 a5 a6'
+        'a7 a8 a9'
+        'a10 a11 a12';
+    column-gap: 50px;
+    row-gap: 50px;
+
+}
+.imagen img{
+    grid-area: auto;
+    max-width: 50%;
+    text-align: center;
+    height: auto;
+}
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ccc9dc62;
+    border-radius: 8px;
+    font-family: 'Josefin Sans';
+    font-size: normal;
+    padding: 30px;
+    transition: 0.8s ease-in-out;
+}
+.imagen:hover {
+    background-color: #ccc9dca0;
+    scale: 1.3;
+    cursor: pointer;
+
+
+}
+article{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    
+}
