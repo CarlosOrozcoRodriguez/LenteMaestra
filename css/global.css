@@ -2,8 +2,6 @@
     --fondo: #0c1821;
     --resaltar: #324a5f;
     --contraste: #ccc9dc;
-    --img-fondo: url('../media/images/camara-background.avif');
-    --img-f: url('../media/images/cachorros.jpg');
     --house: url('../media/icons/home.svg');
     --mail: url('../media/icons/mail.svg');
     --marca: url('../media/icons/marca.jpg');
@@ -31,15 +29,17 @@ aside {
     height: 100vh;
     background-color: var(--contraste);
     width: 100%;
-    & .cabecera {
+    & a div.cabecera {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         font-family: 'Josefin Sans';
         font-size: x-large;
         height: 10%;
+        padding-left: 50px;
         & h1{
             padding-right: 20px;
+            padding-left: 40px;
         }
     }
 
@@ -83,7 +83,7 @@ ul {
     list-style: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     aside {
         display: none;
     }
@@ -152,4 +152,7 @@ ul {
     .texto {
         display: none;
     }
+}
+a{
+    text-decoration: none;
 }
