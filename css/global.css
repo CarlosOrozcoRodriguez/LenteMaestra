@@ -8,7 +8,6 @@
     --mail: url('../media/icons/mail.svg');
     --marca: url('../media/icons/marca.jpg');
 }
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans';
@@ -56,6 +55,7 @@ aside {
         font-weight: bold;
     }
     & a {
+        font-family: 'Poppins';
         text-decoration: none;
         color: var(--fondo);
         font-size: large;
