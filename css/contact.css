@@ -38,6 +38,7 @@ tr{
         }
         &:last-child{
             margin-left: 2vw;
+	    margin-right: 2vw;
         }
         & select {
             border-radius: 10px;
@@ -58,4 +59,61 @@ tr{
         grid-template-columns: 100%;
     }
     
+}
+:root {
+    --facebook: url('../media/icons/social-media/facebook.svg');
+    --google: url('../media/icons/social-media/google.svg');
+    --instagram: url('../media/icons/social-media/instagram.svg');
+    --linkedin: url('../media/icons/social-media/linkedin.svg');
+    --pinterest: url('../media/icons/social-media/pinterest.svg');
+    --rss-feed: url('../media/icons/social-media/rss-feed.svg');
+    --telegram: url('../media/icons/social-media/telegram.svg');
+    --tiktok: url('../media/icons/social-media/tiktok.svg');
+}
+
+footer.social{
+    display: grid;
+    grid-template-columns: repeat(8 1fr);
+}
+
+.icon-social {
+    border-radius: 15%;
+    width: 50px;
+    height: 50px;
+    background-size: 150%;
+    background-position: center;
+    display: grid;
+
+}
+
+.facebook{
+    background-image: var(--facebook);
+}
+
+.google{
+    background-image: var(--google);
+}
+
+.instagram{
+    background-image: var(--instagram);
+}
+
+.linkedin{
+    background-image: var(--linkedin );
+}
+
+.pinterest{
+    background-image: var(--pinterest);
+}
+
+.rss{
+    background-image: var(--rss-feed);
+}
+
+.telegram{
+    background-image: var(--telegram );
+}
+
+.tiktok{
+    background-image: var(--tiktok);
 }
