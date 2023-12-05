@@ -16,8 +16,15 @@ body {
     color: var(--fondo);
     margin: 0;
     height: 100vh;
-}
 
+   
+}
+.contenido-articulo{
+    background-image: var(--img-fondo);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
 main{
     display: flex;
     height: 100vh;
