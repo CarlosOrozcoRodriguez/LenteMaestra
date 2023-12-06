@@ -1,8 +1,4 @@
-aside{
-    position: sticky;
-    top: 0;
 
-}
 article{
     display: flex;
     align-items: center;
@@ -42,5 +38,8 @@ article{
         width: 80%;
         overflow: visible;
     }
-    
+    .muestras-imagenes{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 }
