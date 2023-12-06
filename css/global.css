@@ -16,8 +16,6 @@ body {
     color: var(--fondo);
     margin: 0;
     height: 100vh;
-
-   
 }
 .contenido-articulo{
     background-image: var(--img-fondo);
@@ -30,7 +28,8 @@ main{
     display: flex;
     height: 100vh;
     & aside{
-        width:30% ;
+        min-width:30vw ;
+        max-width: 30%;
     }
 }
 aside {
