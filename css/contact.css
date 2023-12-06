@@ -8,6 +8,15 @@
     --rss-feed: url('../media/icons/social-media/rss-feed.svg');
     --telegram: url('../media/icons/social-media/telegram.svg');
     --tiktok: url('../media/icons/social-media/tiktok.svg');
+    --facebook-alt: url('../media/icons/social-media/facebook-alt.svg');
+    --google-alt: url('../media/icons/social-media/google-alt.svg');
+    --instagram-alt: url('../media/icons/social-media/instagram-alt.svg');
+    --linkedin-alt: url('../media/icons/social-media/linkedin-alt.svg');
+    --pinterest-alt: url('../media/icons/social-media/pinterest-alt.svg');
+    --rss-feed-alt: url('../media/icons/social-media/rss-feed-alt.svg');
+    --telegram-alt: url('../media/icons/social-media/telegram-alt.svg');
+    --tiktok-alt: url('../media/icons/social-media/tiktok-alt.svg');
+
 }
 .contendio-articulo{
     color: var(--contraste);
@@ -65,64 +74,95 @@ tr{
     margin: 1vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
-
 .formulario-form {
     display: grid;
-    grid-template-rows: 400px 50px 50px;;
+    grid-template-rows: auto 50px 50px;
 }
-
-@media screen and (max-width: 768px) {
-    .formulario-tabla-body{
-        grid-template-columns: 100%;
-    }
-    
-}
-
 footer.social{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    column-gap: 1vw;
 }
 
 .icon-social {
     border-radius: 15%;
     width: 50px;
     height: 50px;
-    background-size: 95%;
+    background-repeat: no-repeat;
+    background-size: 75%;
     background-position: center;
     display: grid;
-
+    background-color: var(--resaltar);
+    transition: .3s;
+    &:hover{
+        background-color: var(--contraste);
+        background-size: 85%;
+    }
 }
 
 .facebook{
     background-image: var(--facebook);
+    &:hover{
+        background-image: var(--facebook-alt);
+    }
 }
 
 .google{
     background-image: var(--google);
+    &:hover{
+        background-image: var(--google-alt);
+    }
 }
 
 .instagram{
     background-image: var(--instagram);
+    &:hover{
+        background-image: var(--instagram-alt);
+    }
 }
 
 .linkedin{
-    background-image: var(--linkedin );
+    background-image: var(--linkedin);
+    &:hover{
+        background-image: var(--linkedin-alt);
+    }
 }
 
 .pinterest{
     background-image: var(--pinterest);
+    &:hover{
+        background-image: var(--pinterest-alt);
+    }
 }
 
 .rss{
     background-image: var(--rss-feed);
+    &:hover{
+        background-image: var(--rss-feed-alt);
+    }
 }
 
 .telegram{
-    background-image: var(--telegram );
+    background-image: var(--telegram);
+    &:hover{
+        background-image: var(--telegram-alt);
+    }
 }
 
 .tiktok{
     background-image: var(--tiktok);
+    &:hover{
+        background-image: var(--tiktok-alt);
+    }
+}
+@media screen and (max-width: 768px) {
+    .formulario-tabla-body{
+        grid-template-columns: 100%;
+    }
+    footer.social{
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 1vw;
+    }
 }
