@@ -76,11 +76,9 @@ tr{
     justify-content: center;
     align-items: center;
 }
-
-
 .formulario-form {
     display: grid;
-    grid-template-rows: auto 50px 50px;;
+    grid-template-rows: auto 50px 50px;
 }
 footer.social{
     display: grid;
