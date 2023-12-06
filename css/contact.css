@@ -78,7 +78,7 @@ tr{
 }
 .formulario-form {
     display: grid;
-    grid-template-rows: auto 50px 50px;
+    grid-template-rows: auto 10vh 10vh;
 }
 footer.social{
     display: grid;
@@ -161,8 +161,17 @@ footer.social{
     .formulario-tabla-body{
         grid-template-columns: 100%;
     }
+    .contendio-articulo{
+        grid-template-rows: 1fr 8fr 1.3fr;
+    }
     footer.social{
         grid-template-columns: repeat(4, 1fr);
         row-gap: 1vw;
+    }
+    main {
+        height: 180vh;
+    }
+    tr{
+        min-height: 116px;
     }
 }
