@@ -161,28 +161,28 @@ footer.social{
     .formulario-tabla-body{
         grid-template-columns: 100%;
     }
-    .contendio-articulo{
+    /* .contendio-articulo{
         grid-template-rows: 1fr 8fr 1.3fr;
-    }
+    } */
     footer.social{
         grid-template-columns: repeat(4, 1fr);
         row-gap: 1vw;
     }
     main {
-        height: 180vh;
-    }
-    tr{
+        height: 160vh;
+    } 
+    /* tr{
         min-height: 116px;
-    }
+    } */
 }
-/*Laptop */
+/*Laptop */ 
 @media screen and (min-width: 770px) and (max-height: 580px) {
     main{
         overflow-y: unset;
     }
-    .contendio-articulo{
+    /* .contendio-articulo{
         grid-template-rows: 1fr 8fr 1.3fr;
-    }
+    } */
 }
 
 /* Tablet y portatiles pequeños*/
@@ -198,7 +198,7 @@ footer.social{
     .boton-formulario {
         display: inline;
     }
-    .formulario-tabla-body{
+    /* .formulario-tabla-body{
         grid-template-columns: 50% 50%;
-    }
+    } */
 }
