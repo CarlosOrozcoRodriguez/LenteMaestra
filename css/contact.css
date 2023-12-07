@@ -78,7 +78,7 @@ tr{
 }
 .formulario-form {
     display: grid;
-    grid-template-rows: auto 50px 50px;
+    grid-template-rows: auto 10vh 10vh;
 }
 footer.social{
     display: grid;
@@ -157,12 +157,48 @@ footer.social{
         background-image: var(--tiktok-alt);
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
     .formulario-tabla-body{
         grid-template-columns: 100%;
     }
+    /* .contendio-articulo{
+        grid-template-rows: 1fr 8fr 1.3fr;
+    } */
     footer.social{
         grid-template-columns: repeat(4, 1fr);
         row-gap: 1vw;
     }
+    main {
+        height: 160vh;
+    } 
+    /* tr{
+        min-height: 116px;
+    } */
+}
+/*Laptop */ 
+@media screen and (min-width: 770px) and (max-height: 580px) {
+    main{
+        overflow-y: unset;
+    }
+    /* .contendio-articulo{
+        grid-template-rows: 1fr 8fr 1.3fr;
+    } */
+}
+
+/* Tablet y portatiles pequeños*/
+
+/* 30% left al primer boton display inline-block a*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .formulario-form {
+        display: inline-block;
+    }
+    .recibir-llamada {
+        margin-left: 30%;
+    }
+    .boton-formulario {
+        display: inline;
+    }
+    /* .formulario-tabla-body{
+        grid-template-columns: 50% 50%;
+    } */
 }
